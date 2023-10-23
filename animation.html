@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tester page</title>
+    <style>
+        .c{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background-color: red;
+            position: relative;
+            animation: myfirst 4s  linear 1s infinite alternate;
+            animation-play-state: running;
+        }
+        @-webkit-keyframes myfirst{
+            0%{background: red;left: 0px; top: 0px;}
+            25%{background:blue;left: 200px;top: 0px;}
+            50%{background: yellow;left:200px;top:200px;}
+            75%{background: green;left: 0px;top: 200px;}
+            100%{background: red;left: 0px;top:0px}
+        }
+    </style>
+</head>
+<body>
+    <div class="c"> </div>
+</body>
+</html>
